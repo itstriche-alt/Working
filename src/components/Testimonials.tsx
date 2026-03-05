@@ -37,12 +37,15 @@ export default function Testimonials() {
           {TESTIMONIALS.map((testimonial, index) => (
             <m.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700"
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5, delay: index * 0.12 }}
+              className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700/60 hover:border-blue-500/60 hover:bg-blue-800/70 hover:shadow-2xl hover:shadow-blue-900/60 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden cursor-pointer"
             >
+              {/* Sheen effect matching Services cards */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl" />
+
               <div className="flex gap-1 text-orange-400 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <ICONS.Award key={i} className="w-5 h-5 fill-current" />
@@ -50,7 +53,7 @@ export default function Testimonials() {
               </div>
               <p className="text-blue-100 mb-6 italic">"{testimonial.text}"</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-white">
+                <div className="w-10 h-10 bg-blue-600 group-hover:bg-orange-800 rounded-full flex items-center justify-center font-bold text-white transition-colors duration-300">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>
