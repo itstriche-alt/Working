@@ -1,5 +1,13 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import '../index.css';
+
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-inter',
+    preload: true,
+});
 
 export const metadata: Metadata = {
     title: 'Mold Care Solutions | Expert Mold Removal in Richmond, VA',
@@ -24,8 +32,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
-            <body className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-orange-200 selection:text-orange-900">
+        <html lang="en" className={inter.variable}>
+            <body className={`min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-orange-200 selection:text-orange-900 ${inter.className}`}>
                 {children}
             </body>
         </html>
