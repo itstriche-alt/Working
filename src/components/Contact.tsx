@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { ICONS, COMPANY_INFO } from '../constants';
 
 export default function Contact() {
@@ -155,14 +155,14 @@ export default function Contact() {
               </button>
 
               {status === 'success' && (
-                <motion.div
+                <m.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="flex items-center justify-center gap-2 text-green-600 bg-green-50 py-3 rounded-lg border border-green-100 mt-4"
                 >
                   <ICONS.CheckCircle className="w-5 h-5 flex-shrink-0" />
                   <p className="font-semibold text-sm">Message sent successfully! We'll be in touch shortly.</p>
-                </motion.div>
+                </m.div>
               )}
 
               <p className="text-xs text-slate-500 text-center mt-4">

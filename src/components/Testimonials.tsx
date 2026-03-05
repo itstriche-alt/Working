@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { ICONS, TESTIMONIALS } from '../constants';
 
 export default function Testimonials() {
@@ -33,7 +33,7 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {TESTIMONIALS.map((testimonial, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function Testimonials() {
                   <p className="text-xs text-blue-300">Homeowner</p>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

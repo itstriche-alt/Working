@@ -1,12 +1,12 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { ICONS, SERVICES } from '../constants';
 
 export default function Services() {
   return (
     <section id="services" className="py-16 md:py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
@@ -18,13 +18,13 @@ export default function Services() {
           <p className="text-lg text-slate-600 leading-relaxed">
             We don't just remove mold; we identify the source, treat the affected areas, and prevent future growth.
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           {SERVICES.map((service, index) => {
             const Icon = ICONS[service.icon as keyof typeof ICONS] as React.ElementType;
             return (
-              <motion.div
+              <m.div
                 key={service.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function Services() {
                 <p className="text-slate-600 leading-relaxed flex-grow">
                   {service.description}
                 </p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

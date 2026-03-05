@@ -1,13 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import '../index.css';
-
-const inter = Inter({
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-inter',
-    preload: true,
-});
 
 export const metadata: Metadata = {
     title: 'Mold Care Solutions | Expert Mold Removal in Richmond, VA',
@@ -32,8 +24,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={inter.variable}>
-            <body className={`min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-orange-200 selection:text-orange-900 ${inter.className}`}>
+        <html lang="en">
+            <head>
+                {/* Self-hosted Inter font - no external CDN call */}
+                <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+            </head>
+            <body className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-orange-200 selection:text-orange-900" style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif" }}>
                 {children}
             </body>
         </html>

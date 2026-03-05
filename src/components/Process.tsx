@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { Droplets, Shield, Wind, Trash2, Sparkles, Sun, ClipboardCheck } from 'lucide-react';
 import { ICONS } from '../constants'; // Keeping for the floating stats icon if needed
 
@@ -84,7 +84,7 @@ export default function Process() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Top Header Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -98,7 +98,7 @@ export default function Process() {
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
             Mold remediation is a science. We follow a strict, industry-standard protocol to ensure complete removal and safety.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Steps Timeline Section */}
         <div className="relative">
@@ -109,7 +109,7 @@ export default function Process() {
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
-                <motion.div
+                <m.div
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -161,7 +161,7 @@ export default function Process() {
                       )}
                     </div>
                   </div>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>

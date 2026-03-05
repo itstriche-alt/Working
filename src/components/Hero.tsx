@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ICONS, COMPANY_INFO } from '../constants';
@@ -22,7 +22,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -58,9 +58,9 @@ export default function Hero() {
                 <ICONS.ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-          </motion.div>
+          </m.div>
           {/* Floating Card / Visual Element */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -124,11 +124,11 @@ export default function Hero() {
             {/* Decorative blobs */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/30 rounded-full blur-3xl" />
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/30 rounded-full blur-3xl" />
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Floating Trust Banner */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -175,7 +175,7 @@ export default function Hero() {
               <p className="text-blue-200 text-sm font-medium opacity-90">Industry Gold Standard</p>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

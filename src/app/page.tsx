@@ -1,5 +1,6 @@
 "use client";
 
+import { LazyMotion, domAnimation } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -11,7 +12,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
     return (
-        <>
+        <LazyMotion features={domAnimation} strict>
             <Navbar />
             <main>
                 <Hero />
@@ -22,6 +23,6 @@ export default function Home() {
                 <Contact />
             </main>
             <Footer />
-        </>
+        </LazyMotion>
     );
 }
