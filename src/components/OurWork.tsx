@@ -26,7 +26,7 @@ export default function OurWork() {
     {
       title: "Crawl Space Encapsulation",
       location: "Midlothian, VA",
-      image: "https://plus.unsplash.com/premium_photo-1682148139707-915e573089ae?auto=format&fit=crop&w=1000&q=80",
+      image: "/crawlspace.jpg",
       description: "Vapor barrier installation and dehumidifier setup for long-term protection."
     }
   ];
