@@ -1,3 +1,5 @@
+"use client";
+
 import { ICONS, COMPANY_INFO } from '../constants';
 import Link from 'next/link';
 

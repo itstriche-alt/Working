@@ -1,3 +1,5 @@
+"use client";
+
 import { m } from 'motion/react';
 import { ICONS, TESTIMONIALS } from '../constants';
 
@@ -8,16 +10,16 @@ export default function Testimonials() {
       <div className="absolute inset-0 z-0">
         {/* Deep gradient base */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-blue-900 to-slate-900" />
-        
+
         {/* Abstract geometric shapes */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 mix-blend-overlay" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 mix-blend-screen" />
-        
+
         {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 opacity-[0.03]" 
-             style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
+        <div className="absolute inset-0 opacity-[0.03]"
+          style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         </div>
-        
+
         {/* Dynamic accent lines */}
         <svg className="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 100 100" preserveAspectRatio="none">
           <path d="M0 100 C 30 50 70 50 100 0" stroke="white" strokeWidth="0.5" fill="none" />

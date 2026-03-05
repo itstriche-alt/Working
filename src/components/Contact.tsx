@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { m } from 'motion/react';
 import { ICONS, COMPANY_INFO } from '../constants';

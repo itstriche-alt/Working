@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { m } from 'motion/react';
 import { Droplets, Shield, Wind, Trash2, Sparkles, Sun, ClipboardCheck } from 'lucide-react';

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { m } from 'motion/react';
 import { ICONS, SERVICES } from '../constants';
