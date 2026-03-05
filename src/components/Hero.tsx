@@ -1,6 +1,3 @@
-"use client";
-
-import { m } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ICONS, COMPANY_INFO } from '../constants';
@@ -8,15 +5,15 @@ import { ICONS, COMPANY_INFO } from '../constants';
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-[90vh] flex items-center pt-28 pb-12 lg:pt-20 lg:pb-16 overflow-x-clip">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image with Overlay - Now using local file for 0 DNS latency */}
+      <div className="absolute inset-0 z-0 bg-slate-900">
         <Image
-          src="https://plus.unsplash.com/premium_photo-1664477027317-5b3110359968?auto=format&fit=crop&q=80&w=2070"
+          src="/hero-bg.jpg"
           alt="Professional mold removal technician in full PPE gear disinfecting a home"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-center opacity-80"
         />
         {/* Darker, more clinical overlay for the 'tech/expert' vibe */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-blue-950/85 to-blue-900/60" />
@@ -24,12 +21,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <m.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-8 text-center lg:text-left"
-          >
+          <div className="space-y-8 text-center lg:text-left animate-fade-in-up">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
               Expert Mold Removal <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-200">
@@ -60,14 +52,9 @@ export default function Hero() {
                 <ICONS.ArrowRight className="w-5 h-5" />
               </Link>
             </div>
-          </m.div>
+          </div>
           {/* Floating Card / Visual Element */}
-          <m.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:block relative"
-          >
+          <div className="hidden lg:block relative animate-scale-up-delay">
             <div className="relative z-10 bg-white rounded-2xl p-6 shadow-2xl shadow-blue-900/50 max-w-md mx-auto transform hover:rotate-2 transition-transform duration-500">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3">
@@ -98,10 +85,12 @@ export default function Hero() {
                 <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
                   <ICONS.Wind className="w-5 h-5 text-orange-500" />
                   <div className="flex-1">
-                    <div className="h-2 bg-slate-200 rounded-full w-full">
-                      <div className="h-2 bg-green-500 rounded-full w-[98%]"></div>
+                    <div className="flex-1">
+                      <div className="h-2 bg-slate-200 rounded-full w-full">
+                        <div className="h-2 bg-green-500 rounded-full w-[98%]"></div>
+                      </div>
+                      <p className="text-xs text-slate-500 mt-1">Air Quality: Excellent</p>
                     </div>
-                    <p className="text-xs text-slate-500 mt-1">Air Quality: Excellent</p>
                   </div>
                 </div>
               </div>
@@ -126,16 +115,11 @@ export default function Hero() {
             {/* Decorative blobs */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/30 rounded-full blur-3xl" />
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/30 rounded-full blur-3xl" />
-          </m.div>
+          </div>
         </div>
 
         {/* Floating Trust Banner */}
-        <m.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-16 lg:mt-24 z-30 bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/20 hover:border-white/30 rounded-[2rem] p-6 lg:p-8 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 md:divide-x divide-white/10 w-full transition-all duration-500 overflow-hidden relative group"
-        >
+        <div className="mt-16 lg:mt-24 z-30 bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/20 hover:border-white/30 rounded-[2rem] p-6 lg:p-8 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 md:divide-x divide-white/10 w-full transition-all duration-500 overflow-hidden relative group animate-fade-in-up-delay">
           {/* Subtle sheen reflection */}
           <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
 
@@ -177,7 +161,7 @@ export default function Hero() {
               <p className="text-blue-200 text-sm font-medium opacity-90">Industry Gold Standard</p>
             </div>
           </div>
-        </m.div>
+        </div>
       </div>
     </section>
   );
