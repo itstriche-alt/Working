@@ -15,7 +15,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
-          <h2 className="text-orange-500 font-semibold tracking-wide uppercase text-sm mb-3">Our Expertise</h2>
+          <h2 className="text-orange-700 font-bold tracking-widest uppercase text-sm mb-3">Our Expertise</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Comprehensive Mold Solutions</h3>
           <p className="text-lg text-slate-600 leading-relaxed">
             We don't just remove mold; we identify the source, treat the affected areas, and prevent future growth.

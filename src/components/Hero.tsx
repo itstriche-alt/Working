@@ -36,12 +36,12 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`}
-                className="flex items-center justify-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all shadow-xl shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-1 group"
+                className="flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all shadow-xl shadow-orange-600/20 hover:shadow-orange-600/40 hover:-translate-y-1 group"
               >
                 <ICONS.Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                 <div className="text-left leading-tight">
-                  <span className="block text-xs font-medium opacity-90 uppercase tracking-wide">Call Now:</span>
-                  <span className="block font-bold">{COMPANY_INFO.phone}</span>
+                  <span className="block text-xs font-bold uppercase tracking-wide text-white">Call Now:</span>
+                  <span className="block font-bold text-white">{COMPANY_INFO.phone}</span>
                 </div>
               </a>
               <Link
@@ -83,7 +83,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
-                  <ICONS.Wind className="w-5 h-5 text-orange-500" />
+                  <ICONS.Wind className="w-5 h-5 text-orange-600" />
                   <div className="flex-1">
                     <div className="flex-1">
                       <div className="h-2 bg-slate-200 rounded-full w-full">
@@ -113,7 +113,7 @@ export default function Hero() {
             </div>
 
             {/* Decorative blobs */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/30 rounded-full blur-3xl" />
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-600/30 rounded-full blur-3xl" />
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/30 rounded-full blur-3xl" />
           </div>
         </div>

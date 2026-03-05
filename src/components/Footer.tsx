@@ -21,7 +21,7 @@ export default function Footer() {
                 <span className="text-[22px] font-black text-white leading-none tracking-tight">
                   Mold Care
                 </span>
-                <span className="text-[9px] font-bold text-orange-500 uppercase tracking-[0.2em] leading-tight mt-0.5">
+                <span className="text-[9px] font-bold text-orange-600 uppercase tracking-[0.2em] leading-tight mt-0.5">
                   Solutions
                 </span>
               </div>
@@ -35,12 +35,12 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-5 text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-3 text-sm">
-              <li><Link href="#hero" className="hover:text-orange-500 transition-colors block py-1">Home</Link></li>
-              <li><Link href="#services" className="hover:text-orange-500 transition-colors block py-1">Services</Link></li>
-              <li><Link href="#process" className="hover:text-orange-500 transition-colors block py-1">Process</Link></li>
-              <li><Link href="#work" className="hover:text-orange-500 transition-colors block py-1">Our Work</Link></li>
-              <li><Link href="#testimonials" className="hover:text-orange-500 transition-colors block py-1">Testimonials</Link></li>
-              <li><Link href="#contact" className="hover:text-orange-500 transition-colors block py-1">Contact</Link></li>
+              <li><Link href="#hero" className="hover:text-orange-600 transition-colors block py-1">Home</Link></li>
+              <li><Link href="#services" className="hover:text-orange-600 transition-colors block py-1">Services</Link></li>
+              <li><Link href="#process" className="hover:text-orange-600 transition-colors block py-1">Process</Link></li>
+              <li><Link href="#work" className="hover:text-orange-600 transition-colors block py-1">Our Work</Link></li>
+              <li><Link href="#testimonials" className="hover:text-orange-600 transition-colors block py-1">Testimonials</Link></li>
+              <li><Link href="#contact" className="hover:text-orange-600 transition-colors block py-1">Contact</Link></li>
             </ul>
           </div>
 

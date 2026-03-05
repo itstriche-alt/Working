@@ -92,7 +92,7 @@ export default function Process() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-orange-500 font-semibold tracking-wide uppercase text-sm mb-3 relative inline-block">
+          <h2 className="text-orange-700 font-bold tracking-wide uppercase text-sm mb-3 relative inline-block">
             <span className="relative z-10">Our Process</span>
             <span className="absolute bottom-1 left-0 w-full h-2 bg-orange-100 -z-10 transform -rotate-1"></span>
           </h2>
@@ -126,7 +126,7 @@ export default function Process() {
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 shadow-sm group-hover:bg-blue-50 group-hover:border-blue-200 group-hover:shadow-md transition-all duration-300 relative">
                         {/* Number Badge scales and changes color on hover */}
-                        <span className="absolute -top-3 -right-3 w-7 h-7 bg-blue-600 group-hover:bg-orange-500 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-md z-20 transition-all duration-300 group-hover:scale-110">
+                        <span className="absolute -top-3 -right-3 w-7 h-7 bg-blue-600 group-hover:bg-orange-600 text-white rounded-full flex items-center justify-center text-xs font-bold shadow-md z-20 transition-all duration-300 group-hover:scale-110">
                           {index + 1}
                         </span>
                         {/* Icon scales and tilts on hover */}

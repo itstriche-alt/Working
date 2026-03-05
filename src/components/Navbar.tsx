@@ -57,7 +57,7 @@ export default function Navbar() {
                   }`}>
                   Mold Care
                 </span>
-                <span className={`text-[9px] font-bold uppercase tracking-[0.2em] leading-tight mt-0.5 transition-colors duration-300 ${scrolled || isOpen ? 'text-orange-500' : 'text-orange-200'
+                <span className={`text-[9px] font-bold uppercase tracking-[0.2em] leading-tight mt-0.5 transition-colors duration-300 ${scrolled || isOpen ? 'text-orange-600' : 'text-orange-200'
                   }`}>
                   Solutions
                 </span>
@@ -141,10 +141,10 @@ export default function Navbar() {
                       setIsOpen(false);
                       document.body.style.overflow = 'unset';
                     }}
-                    className="text-3xl font-bold text-slate-900 py-4 border-b border-slate-100 hover:text-orange-500 hover:pl-4 transition-all flex items-center justify-between group cursor-pointer block w-full"
+                    className="text-3xl font-bold text-slate-900 py-4 border-b border-slate-100 hover:text-orange-600 hover:pl-4 transition-all flex items-center justify-between group cursor-pointer block w-full"
                   >
                     {link.name}
-                    <ICONS.ArrowRight className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-orange-500" />
+                    <ICONS.ArrowRight className="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all text-orange-600" />
                   </Link>
                 </m.div>
               ))}
@@ -171,7 +171,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="flex flex-col items-center justify-center gap-2 bg-slate-50 p-4 rounded-2xl text-slate-600 font-medium hover:bg-slate-100 transition-colors"
                 >
-                  <ICONS.Mail className="w-6 h-6 text-orange-500" />
+                  <ICONS.Mail className="w-6 h-6 text-orange-600" />
                   <span>Email Us</span>
                 </Link>
                 <div className="flex flex-col items-center justify-center gap-2 bg-slate-50 p-4 rounded-2xl text-slate-600 font-medium">
