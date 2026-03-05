@@ -37,30 +37,8 @@ html {
   scroll-padding-top: 5rem;
 }
 
-/* ─── Scroll Performance ─────────────────────────────────────────────────────
-   content-visibility:auto tells the browser it can skip layout/paint for
-   off-screen sections entirely — biggest single LCP/scroll win available.
-   contain-intrinsic-size prevents layout shift when sections are skipped.
-──────────────────────────────────────────────────────────────────────────── */
-#services,
-#process,
-#work,
-#testimonials,
-#contact {
-  content-visibility: auto;
-  contain-intrinsic-size: 0 600px;
-}
-
-/* Pre-promote animated cards to their own GPU layer before Framer Motion
-   fires, so the browser doesn't trigger a compositor promotion mid-scroll. */
-@media (min-width: 768px) {
-  .group {
-    will-change: transform;
-  }
-}
-
-/* On mobile, disable the CSS keyframe hero animations — they run on load
-   and can cause jank on low-power mobile GPUs. Elements are visible by default. */
+/* On mobile, disable CSS keyframe hero animations so they don't compete
+   with scroll compositing on low-power GPUs. Zero Lighthouse impact. */
 @media (max-width: 767px) {
 
   .animate-fade-in-up,
