@@ -2,6 +2,7 @@
 
 import { ICONS, COMPANY_INFO } from '../constants';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -12,10 +13,14 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              {/* Logo Image Placeholder */}
-              <div className="w-12 h-12 flex-shrink-0 bg-slate-900 rounded-lg flex items-center justify-center border border-slate-800 overflow-hidden">
-                {/* Replace this div or the icon inside with your actual <Image src="/logo.png" /> */}
-                <ICONS.ShieldCheck className="w-7 h-7 text-blue-500" />
+              <div className="w-11 h-11 flex-shrink-0">
+                <Image
+                  src="/logo.svg"
+                  alt="Mold Care Solutions logo"
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-[22px] font-black text-white leading-none tracking-tight">

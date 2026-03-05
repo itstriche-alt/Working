@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { m, AnimatePresence } from 'motion/react';
+import Image from 'next/image';
 import { ICONS, COMPANY_INFO } from '../constants';
 
 export default function Navbar() {
@@ -47,10 +48,15 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link href="#" className="flex items-center gap-3 group relative z-50">
-              {/* Logo Image Placeholder */}
-              <div className={`w-12 h-12 flex-shrink-0 rounded-lg flex items-center justify-center overflow-hidden transition-all duration-300 ${scrolled || isOpen ? 'bg-white shadow-sm border border-slate-100' : 'bg-white/10 backdrop-blur-md border border-white/20'}`}>
-                {/* Replace this div or the icon inside with your actual <Image src="/logo.png" /> */}
-                <ICONS.ShieldCheck className={`w-7 h-7 ${scrolled || isOpen ? 'text-blue-600' : 'text-white'}`} />
+              <div className="w-11 h-11 flex-shrink-0 flex items-center justify-center">
+                <Image
+                  src="/logo.svg"
+                  alt="Mold Care Solutions logo"
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain"
+                  priority
+                />
               </div>
               <div className="flex flex-col justify-center">
                 <span className={`text-[22px] font-black tracking-tight leading-none transition-colors duration-300 ${scrolled || isOpen ? 'text-slate-900' : 'text-white'
