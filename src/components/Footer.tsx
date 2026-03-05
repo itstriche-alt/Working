@@ -21,12 +21,12 @@ export default function Footer() {
                 <span className="text-[22px] font-black text-white leading-none tracking-tight">
                   Mold Care
                 </span>
-                <span className="text-[9px] font-bold text-orange-800 uppercase tracking-[0.2em] leading-tight mt-0.5">
+                <span className="text-[11px] font-bold text-orange-400 uppercase tracking-[0.2em] leading-tight mt-0.5">
                   Solutions
                 </span>
               </div>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed max-w-md">
+            <p className="text-slate-300 text-sm leading-relaxed max-w-md">
               Professional mold remediation services dedicated to restoring the safety and comfort of your home. Licensed, insured, and trusted by homeowners across Richmond and the DMV area.
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <p className="text-center md:text-left">
             &copy; {new Date().getFullYear()} Mold Care Solutions. All rights reserved.
           </p>

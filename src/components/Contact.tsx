@@ -42,7 +42,7 @@ export default function Contact() {
           <div className="bg-blue-600 p-6 md:p-12 text-white flex flex-col justify-between">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-6">Get a Free Quote</h3>
-              <p className="text-blue-100 mb-8 md:mb-10 text-base md:text-lg">
+              <p className="text-white/90 mb-8 md:mb-10 text-base md:text-lg">
                 Don't let mold compromise your health or property. Contact us today for a rapid response and professional assessment.
               </p>
 
@@ -52,7 +52,7 @@ export default function Contact() {
                     <ICONS.Phone className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="text-blue-200 text-sm">Call Us 24/7</p>
+                    <p className="text-blue-50 text-sm font-medium">Call Us 24/7</p>
                     <a href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`} className="text-base sm:text-lg md:text-xl font-bold hover:text-orange-300 transition-colors">
                       {COMPANY_INFO.phone}
                     </a>
@@ -64,7 +64,7 @@ export default function Contact() {
                     <ICONS.Mail className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="text-blue-200 text-sm">Email Us</p>
+                    <p className="text-blue-50 text-sm font-medium">Email Us</p>
                     <a href={`mailto:${COMPANY_INFO.email}`} className="text-base sm:text-lg md:text-xl font-bold hover:text-orange-300 transition-colors block break-all sm:break-normal line-clamp-2">
                       {COMPANY_INFO.email}
                     </a>
@@ -76,7 +76,7 @@ export default function Contact() {
                     <ICONS.MapPin className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="text-blue-200 text-sm">Service Area</p>
+                    <p className="text-blue-50 text-sm font-medium">Service Area</p>
                     <p className="text-base sm:text-lg md:text-xl font-bold leading-snug pr-2">
                       {COMPANY_INFO.location}
                     </p>

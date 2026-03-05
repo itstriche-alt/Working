@@ -57,7 +57,7 @@ export default function Navbar() {
                   }`}>
                   Mold Care
                 </span>
-                <span className={`text-[9px] font-bold uppercase tracking-[0.2em] leading-tight mt-0.5 transition-colors duration-300 ${scrolled || isOpen ? 'text-orange-800' : 'text-orange-200'
+                <span className={`text-[11px] font-bold uppercase tracking-[0.2em] leading-tight mt-0.5 transition-colors duration-300 ${scrolled || isOpen ? 'text-orange-600' : 'text-orange-200'
                   }`}>
                   Solutions
                 </span>
@@ -95,7 +95,7 @@ export default function Navbar() {
                   <ICONS.Phone className={`w-4 h-4 ${scrolled ? 'text-white' : 'text-blue-700'}`} />
                 </div>
                 <div className="flex flex-col items-start leading-none">
-                  <span className={`text-[9px] font-extrabold uppercase tracking-[0.15em] mb-1 ${scrolled ? 'text-blue-200' : 'text-blue-400'
+                  <span className={`text-[9px] font-extrabold uppercase tracking-[0.15em] mb-1 ${scrolled ? 'text-white/70' : 'text-blue-400'
                     }`}>24/7 Emergency</span>
                   <span className="text-[15px] font-bold tracking-tight tabular-nums">{COMPANY_INFO.phone}</span>
                 </div>

@@ -14,10 +14,10 @@ export default function Hero() {
           priority
           quality={70}
           sizes="100vw"
-          className="object-cover object-center opacity-80"
+          className="object-cover object-[40%_center] opacity-95"
         />
-        {/* Darker, more clinical overlay for the 'tech/expert' vibe */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-blue-950/85 to-blue-900/60" />
+        {/* Overlay: dark enough for text, light enough to let the macro texture breathe */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/88 via-slate-900/70 to-slate-800/20" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
