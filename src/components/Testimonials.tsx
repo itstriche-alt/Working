@@ -13,7 +13,7 @@ export default function Testimonials() {
 
         {/* Abstract geometric shapes */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 mix-blend-overlay" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-600/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 mix-blend-screen" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-800/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 mix-blend-screen" />
 
         {/* Subtle grid pattern overlay */}
         <div className="absolute inset-0 opacity-[0.03]"

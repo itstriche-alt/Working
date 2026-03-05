@@ -35,7 +35,7 @@ export default function OurWork() {
     <section id="work" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-orange-700 font-bold tracking-wide uppercase text-sm mb-3">Our Work</h2>
+          <h2 className="text-orange-900 font-black tracking-wide uppercase text-sm mb-3">Our Work</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Recent Projects</h3>
           <p className="text-lg text-slate-600 leading-relaxed">
             See how we've helped homeowners across Richmond and the DMV area restore their properties to a safe, healthy condition.

@@ -89,14 +89,14 @@ export default function Contact() {
               <div className="flex gap-4">
                 <a
                   href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`}
-                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all hover:-translate-y-1 shadow-lg shadow-blue-900/20"
+                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-orange-800 transition-all hover:-translate-y-1 shadow-lg shadow-blue-900/20"
                   aria-label="Call us"
                 >
                   <ICONS.Phone className="w-5 h-5 text-white" />
                 </a>
                 <a
                   href={`mailto:${COMPANY_INFO.email}`}
-                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all hover:-translate-y-1 shadow-lg shadow-blue-900/20"
+                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-orange-800 transition-all hover:-translate-y-1 shadow-lg shadow-blue-900/20"
                   aria-label="Email us"
                 >
                   <ICONS.Mail className="w-5 h-5 text-white" />
@@ -105,7 +105,7 @@ export default function Contact() {
                   href="https://maps.google.com/?q=Richmond,+VA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-orange-600 transition-all hover:-translate-y-1 shadow-lg shadow-blue-900/20"
+                  className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-orange-800 transition-all hover:-translate-y-1 shadow-lg shadow-blue-900/20"
                   aria-label="View on map"
                 >
                   <ICONS.MapPin className="w-5 h-5 text-white" />
@@ -151,7 +151,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
-                className="w-full bg-orange-600 hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-orange-600/20 transition-all hover:-translate-y-1 disabled:opacity-70 disabled:hover:translate-y-0"
+                className="w-full bg-orange-800 hover:bg-orange-800 text-white font-bold py-4 rounded-xl shadow-lg shadow-orange-800/20 transition-all hover:-translate-y-1 disabled:opacity-70 disabled:hover:translate-y-0"
               >
                 {status === 'submitting' ? 'Sending...' : 'Send Message'}
               </button>

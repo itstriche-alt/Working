@@ -12,6 +12,7 @@ export default function Hero() {
           alt="Professional mold removal technician in full PPE gear disinfecting a home"
           fill
           priority
+          quality={70}
           sizes="100vw"
           className="object-cover object-center opacity-80"
         />
@@ -29,14 +30,14 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
               Protect your home and health with our professional mold inspection and remediation services. Fast, effective, and certified solutions for a safer environment.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`}
-                className="flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all shadow-xl shadow-orange-600/20 hover:shadow-orange-600/40 hover:-translate-y-1 group"
+                className="flex items-center justify-center gap-3 bg-orange-800 hover:bg-orange-900 text-white px-8 py-3 rounded-xl font-semibold text-lg transition-all shadow-xl shadow-orange-900/20 hover:shadow-orange-900/40 hover:-translate-y-1 group"
               >
                 <ICONS.Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                 <div className="text-left leading-tight">
@@ -83,7 +84,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
-                  <ICONS.Wind className="w-5 h-5 text-orange-600" />
+                  <ICONS.Wind className="w-5 h-5 text-orange-800" />
                   <div className="flex-1">
                     <div className="flex-1">
                       <div className="h-2 bg-slate-200 rounded-full w-full">
@@ -113,7 +114,7 @@ export default function Hero() {
             </div>
 
             {/* Decorative blobs */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-600/30 rounded-full blur-3xl" />
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-800/30 rounded-full blur-3xl" />
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/30 rounded-full blur-3xl" />
           </div>
         </div>
