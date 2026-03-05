@@ -41,7 +41,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: index * 0.12 }}
-              className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700/60 hover:border-blue-500/60 hover:bg-blue-800/70 hover:shadow-2xl hover:shadow-blue-900/60 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden cursor-pointer"
+              className="bg-blue-800/60 md:bg-blue-800/50 md:backdrop-blur-sm p-8 rounded-2xl border border-blue-700/60 hover:border-blue-500/60 hover:bg-blue-800/70 hover:shadow-2xl hover:shadow-blue-900/60 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden cursor-pointer"
             >
               {/* Sheen effect matching Services cards */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl" />

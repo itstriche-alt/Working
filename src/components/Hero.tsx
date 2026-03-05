@@ -47,7 +47,7 @@ export default function Hero() {
               </a>
               <Link
                 href="#contact"
-                className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:-translate-y-1"
+                className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 md:backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:-translate-y-1"
               >
                 Get a Free Quote
                 <ICONS.ArrowRight className="w-5 h-5" />
@@ -120,7 +120,7 @@ export default function Hero() {
         </div>
 
         {/* Floating Trust Banner */}
-        <div className="mt-16 lg:mt-24 z-30 bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/20 hover:border-white/30 rounded-[2rem] p-6 lg:p-8 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 md:divide-x divide-white/10 w-full transition-all duration-500 overflow-hidden relative group animate-fade-in-up-delay">
+        <div className="mt-16 lg:mt-24 z-30 bg-white/5 hover:bg-white/10 md:backdrop-blur-xl border border-white/20 hover:border-white/30 rounded-[2rem] p-6 lg:p-8 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 md:divide-x divide-white/10 w-full transition-all duration-500 overflow-hidden relative group animate-fade-in-up-delay">
           {/* Subtle sheen reflection */}
           <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
 
